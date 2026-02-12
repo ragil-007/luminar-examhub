@@ -1,0 +1,131 @@
+/* ===============================
+   PREMIUM COMMON ERROR PAGE
+   =============================== */
+
+.ems-error-wrapper {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.ems-error-panel {
+  width: 100%;
+  max-width: 560px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+}
+
+/* Accent line (premium touch) */
+.ems-error-accent {
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    #8b5cf6,
+    #a78bfa
+  );
+}
+
+/* Content */
+.ems-error-content {
+  padding: 48px 42px 44px;
+  text-align: center;
+}
+
+/* Small tag */
+.ems-error-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b5cf6;
+  margin-bottom: 14px;
+}
+
+/* Title */
+.ems-error-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b2a55;
+  margin-bottom: 14px;
+}
+
+/* Message */
+.ems-error-text {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #475569;
+  max-width: 420px;
+  margin: 0 auto 34px;
+}
+
+/* Actions */
+.ems-error-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Primary CTA */
+.ems-btn-primary {
+  background: #8b5cf6;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.ems-btn-primary:hover {
+  background: #7c3aed;
+  transform: translateY(-1px);
+}
+
+/* Secondary CTA (link-style, premium) */
+.ems-btn-link {
+  background: transparent;
+  border: none;
+  color: #475569;
+  font-size: 14.5px;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.ems-btn-link:hover {
+  color: #0b2a55;
+}
+
+.ems-btn-back {
+  background: transparent;
+  color: #0b2a55;            /* Same dark blue as headings */
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db; /* Thin, subtle outline */
+  font-size: 14.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+/* Hover: very subtle */
+.ems-btn-back:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+  transform: translateY(-1px);
+}
+
+/* Active */
+.ems-btn-back:active {
+  transform: translateY(0);
+}
+

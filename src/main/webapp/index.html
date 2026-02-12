@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!--<script language="javascript">
+	document.onmousedown=disableclick;
+	status="Welcome to Demo Project";
+	function disableclick(event)
+	{
+	if(event.button==2)
+	{
+	alert(status);
+	return false;
+	}
+	}
+	</script>-->
+
+<!--<script type = "text/javascript" >
+	function preventBack()
+	{
+	window.history.forward();
+	}
+	setTimeout("preventBack()", 0);
+	window.onunload=function(){null};
+	</script>-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+  <!-- LEFT SIDE ILLUSTRATION -->
+  <div class="left-bg">
+
+    <!-- LOGO OVERLAY -->
+    <div class="brand-overlay">
+      <img src="images/login-side.png" alt="Luminar Logo">
+      <p>Kerala's No.1 Software Training Institute</p>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE FORM -->
+  <div class="right-form">
+    <div class="login">
+      <h2>Login</h2>
+
+      <form method="post" action="loginAction.jsp">
+        <input type="text" class="textfield" name="username" placeholder="Enter your username">
+        <input type="password" class="textfield" name="pass" placeholder="Enter your password">
+
+        <a href="#">Forgot password?</a>
+        <input type="submit" value="Login">
+
+        <div class="sign-up">
+          <label>Don't have an account?</label>
+          <a href="signup.jsp">Signup</a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

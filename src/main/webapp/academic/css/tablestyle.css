@@ -1,0 +1,184 @@
+/* Page wrapper */
+.page-section {
+  background: #f6f9fc;
+  padding: 60px 0;
+}
+
+/* Card block (same visual style as contact form) */
+.data-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(11, 42, 85, 0.08);
+}
+
+/* Title */
+.data-card-title {
+  text-align: center;
+  color: #0b2a55;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Table container */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* Head */
+.data-table thead {
+  background: #f1f5fb;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 12px 14px;
+  font-weight: 600;
+  color: #0b2a55;
+  border-bottom: 1px solid #dbe4f0;
+}
+
+/* Body */
+.data-table td {
+  padding: 12px 14px;
+  color: #3e4f66;
+  border-bottom: 1px solid #e6edf7;
+}
+
+/* Row hover (subtle & professional) */
+.data-table tbody tr:hover {
+  background: #f7faff;
+}
+
+/* Action buttons container */
+.table-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Common button style */
+.table-actions button {
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease;
+}
+
+/* Edit button */
+.btn-edit {
+  background: rgba(11, 42, 85, 0.08);
+  color: #0b2a55;
+}
+
+.btn-edit:hover {
+  background: #0b2a55;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Delete button */
+.btn-delete {
+  background: rgba(211, 47, 47, 0.08);
+  color: #d32f2f;
+}
+
+.btn-delete:hover {
+  background: #d32f2f;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* ------------------------------------- */
+
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6edf7;
+}
+
+.toolbar-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b2a55;
+  margin: 0;
+}
+
+.toolbar-desc {
+  font-size: 13px;
+  color: #6b7c93;
+  margin-top: 4px;
+}
+
+.btn-primary {
+  background: #0b2a55;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: #08264d;
+  box-shadow: 0 6px 18px rgba(11,42,85,.25);
+}
+
+/* -------------------- */
+
+
+/* Sl No */
+.col-slno {
+  width: 80px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Name columns */
+.col-name {
+  font-weight: 500;
+  color: #0b2a55;
+}
+
+/* Date / extra columns */
+.col-name-2 {
+  text-align: center;
+  color: #3e4f66;
+}
+
+/* Action column */
+.col-action {
+  width: 160px;
+  text-align: center;
+}
+
+.exam-filter-select {
+  margin-top: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #dbe4f0;
+  background: #ffffff;
+  color: #0b2a55;
+}
+
+

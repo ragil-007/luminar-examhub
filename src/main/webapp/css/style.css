@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:
+    radial-gradient(circle at top, rgba(106, 27, 154, 0.10), transparent 40%),
+    linear-gradient(180deg, #F7F9FC 0%, #EEF1F5 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+	text-align:center;
+	margin-bottom:20px;
+	color: #6A1B9A;
+}
+
+.login{
+	background-color:white;
+	width: 330px;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius:6px;
+	
+}
+
+.textfield{
+	width:100%;
+	padding:15px;
+	border: 1px solid #e0e0e0;
+	border-radius:6px;
+	color: #999;
+	letter-spacing: 1px;
+}
+
+.dropdown{
+	width:100%;
+	padding:15px;
+	border: 1px solid #e0e0e0;
+	border-radius:6px;
+	color: #999;
+	letter-spacing: 1px;
+}
+
+select.dropdown {
+  color: #888888;   /* gray */
+}
+
+select.dropdown:valid {
+  color: #000000;   /* black */
+}
+
+.textfield::placeholder{
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	font-size:14px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	color: #999;
+}
+
+.textfield:not(:placeholder-shown) {
+  color: #000;
+}
+
+select.textfield:valid {
+  color: #000;      
+}
+
+a {
+    text-decoration: none;
+	color:#6A1B9A;
+	font-size:14px;
+	font-weight: 500;
+  }
+ 
+input[type="submit"] {
+	width:100%;
+	background-color:#6A1B9A;
+	color:white;
+	padding:15px;
+	border: 1px solid #e0e0e0;
+	border-radius:6px;
+	
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+  background-color:#5E1786;
+}
+
+input[type="submit"]:active {
+  background-color:#7E5A8E;
+}
+ 
+.sign-up{
+	text-align:center;
+	font-size:14px;
+}
+
+/* Consistent spacing between inputs */
+.login form > select,
+.login form > input {
+  margin-bottom: 15px;
+}
+
+/* Remove ugly default select focus border */
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #6A1B9A;
+  box-shadow: 0 0 0 1px #6A1B9A;
+}
+
+/* Make dropdown height same as input */
+.dropdown {
+  height: 48px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Main page split */
+.page-wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.left-bg {
+  flex: 1.3;
+  position: relative;
+
+  background:
+    linear-gradient(
+      rgba(106, 27, 154, 0.08),
+      rgba(106, 27, 154, 0.08)
+    ),
+    url("../images/illustration.svg") center / contain no-repeat,
+    #F5F7FB;
+
+  box-shadow: inset -10px 0 30px rgba(0, 0, 0, 0.04);
+}
+
+
+/* RIGHT FORM SIDE */
+.right-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F6F8;
+}
+
+/* Remove body centering */
+body {
+  display: block;
+}
+
+
+.brand-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand-overlay img {
+  width: 90px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+}
+
+.brand-overlay p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6A1B9A;
+}
+
+
+@media (max-width: 900px) {
+  .left-bg {
+    display: none;
+  }
+
+  .right-form {
+    flex: 1;
+  }
+}
+
+.login a {
+  display: inline-block;
+  margin-bottom: 14px;   /* space below "Forgot password?" */
+}

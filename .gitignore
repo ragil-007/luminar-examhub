@@ -1,0 +1,19 @@
+# Maven
+target/
+
+# Eclipse build folder
+build/
+
+# Ignore compiled Java files
+*.class
+
+# Ignore JARs inside WEB-INF/lib
+src/main/webapp/WEB-INF/lib/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
